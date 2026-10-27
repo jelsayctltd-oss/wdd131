@@ -67,14 +67,30 @@ main h1 {
 
 /* Card columns */
 
+
 .content-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    gap: 12px;
     width: 100%;
+    align-items: stretch;
     box-sizing: border-box;
 }
 
+.about-country {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-content: start;
+}
+
+.card {
+    border: 1px solid #cccccc;
+    border-radius: 9px;
+    overflow: hidden;
+    background-color: white;
+    min-width: 0;
+}
 
 main h1 {
     text-align: center;
