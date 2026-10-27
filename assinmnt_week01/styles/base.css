@@ -149,3 +149,26 @@ main h1 {
 .resources-card li {
     margin-bottom: 8px;
 }
+
+
+/* Footer */
+
+footer {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #204f73;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 0.8rem;
+}
