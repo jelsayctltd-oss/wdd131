@@ -46,28 +46,32 @@ nav a:hover {
 }
 
 
-/* Main card layout */
 
+/* Main content */
+
+main {
+    width: 98%;
+    max-width: none;
+    margin: 20px auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main h1 {
+    text-align: center;
+    margin: 25px 0 20px;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #222222;
+}
+
+/* Card columns */
 
 .content-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
     width: 100%;
-    align-items: stretch;
-    box-sizing: border-box;
-}
-
-
-
-/* Main content and centered name */
-
-
-main {
-    max-width: 1500px;
-    width: 94%;
-    margin: 20px auto;
-    padding: 0;
     box-sizing: border-box;
 }
 
