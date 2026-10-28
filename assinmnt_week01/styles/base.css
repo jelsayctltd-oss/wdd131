@@ -1,0 +1,263 @@
+/* =====================================
+   1. GENERAL PAGE STYLING
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+
+/* =====================================
+   2. HEADER AND COURSE TITLE
+===================================== */
+
+#course-title {
+    display: block;
+    background-color: #204f73;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   3. NAVIGATION MENU
+===================================== */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #333333;
+    padding: 8px 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #e9c46a;
+    color: #17365d;
+    border-radius: 4px;
+}
+
+
+/* =====================================
+   4. MAIN CONTENT AND YOUR NAME
+===================================== */
+
+main {
+    width: 96%;
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 20px 0;
+    color: #222222;
+}
+
+
+/* =====================================
+   5. TWO-COLUMN CARD LAYOUT
+===================================== */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+    align-items: stretch;
+}
+
+
+/* =====================================
+   6. CARD APPEARANCE
+===================================== */
+
+.card {
+    border: 1px solid #cccccc;
+    border-radius: 9px;
+    overflow: hidden;
+    background-color: #ffffff;
+    min-width: 0;
+}
+
+.card h2 {
+    background-color: #204f73;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 13px 10px;
+    margin: 0;
+}
+
+
+/* =====================================
+   7. ABOUT ME SECTION
+===================================== */
+
+.about-card {
+    padding: 0 18px 15px;
+}
+
+.about-intro {
+    display: flow-root;
+    padding-top: 10px;
+}
+
+.about-intro p,
+.country-section p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.profile-image {
+    float: right;
+    width: 120px;
+    max-width: 40%;
+    height: auto;
+    margin: 5px 0 10px 15px;
+}
+
+
+/* =====================================
+   8. NIGERIA SECTION
+===================================== */
+
+.country-section {
+    display: flow-root;
+    margin-top: 15px;
+}
+
+.country-section h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.nigeria-image {
+    float: left;
+    width: 140px;
+    max-width: 40%;
+    height: auto;
+    margin: 5px 18px 10px 0;
+}
+
+
+/* =====================================
+   9. WEB DEVELOPMENT RESOURCES
+===================================== */
+
+.resources-card ul {
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.resources-card li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.resources-card a {
+    color: #0000ee;
+}
+
+.resources-card a:hover,
+.resources-card a:focus {
+    color: #204f73;
+}
+
+
+/* =====================================
+   10. FOOTER
+===================================== */
+
+footer {
+    width: 100%;
+    background-color: #204f73;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 10px 14px;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin: 3px 0;
+    line-height: 1.4;
+}
+
+#lastModified {
+    color: #ffff00;
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+
+/* =====================================
+   11. MOBILE RESPONSIVENESS
+===================================== */
+
+@media screen and (max-width: 700px) {
+    #course-title {
+        font-size: 1.15rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main h1 {
+        font-size: 1.6rem;
+    }
+
+    .resources-card ul {
+        margin-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    .profile-image {
+        width: 100px;
+    }
+
+    .nigeria-image {
+        width: 110px;
+    }
+}
