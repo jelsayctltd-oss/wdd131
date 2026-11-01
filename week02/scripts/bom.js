@@ -4,14 +4,45 @@ const button = document.querySelector('button');
 
 const list = document.querySelector('#list');
 
-const li = document.createElement('li');
+// Listen for the Add Chapter button click
+button.addEventListener('click', function () {
 
-const deleteButton = document.createElement('button');
+    // Check that the input is not empty
+    if (input.value.trim() !== '') {
 
-li.textContent = input.value;
+        // Create a list item
+        const li = document.createElement('li');
 
-deleteButton.textContent = '❌';
+        // Create a delete button
+        const deleteButton = document.createElement('button');
 
-li.append(deleteButton);
+        // Add the chapter to the list item
+        li.textContent = input.value.trim();
 
-list.append(li);
+        // Add the delete symbol
+        deleteButton.textContent = '❌';
+
+        // Add delete button styling
+        deleteButton.classList.add('delete');
+
+        // Listen for delete button clicks
+        deleteButton.addEventListener('click', function () {
+            list.removeChild(li);
+            input.focus();
+        });
+
+        // Add delete button to list item
+        li.append(deleteButton);
+
+        // Add list item to the webpage
+        list.append(li);
+
+        // Clear the input box
+        input.value = '';
+
+        // Return cursor to input box
+        input.focus();
+    } else {
+        input.focus();
+    }
+});
