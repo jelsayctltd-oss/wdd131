@@ -1,15 +1,13 @@
 
-// GET THE CURRENT YEAR
+// GET THE CURRENT YEAR, DISPLAY THE YEAR IN THE FOOTER
 const currentYear = new Date().getFullYear();
 
-// DISPLAY THE YEAR IN THE FOOTER
 document.querySelector("#currentyear").textContent = currentYear;
 
 
-// GET THE LAST MODIFIED DATE
+// GET THE LAST MODIFIED DATE, DISPLAY THE LAST MODIFIED DATE
 const lastModified = new Date(document.lastModified);
 
-// DISPLAY THE LAST MODIFIED DATE
 document.querySelector("#lastModified").textContent =
     lastModified.toLocaleString();
 
