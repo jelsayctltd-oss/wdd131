@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions Practice</title>
+</head>
+<body>
+    <h1>JavaScript Functions Practice</h1>
+
+    <h2>Full Name Result:</h2>
+    <p id="fullNameAnswer"></p>
+
+    <script>
+        // Function declaration
+        let firstName = 'Antonia';
+        let lastName = 'Francesca';
+
+        const fullName = (first, last) => `${first} ${last}`;
+
+        // Call the function and display the result
+        document.querySelector('#fullNameAnswer').textContent =
+            fullName(firstName, lastName);
+    </script>
+</body>
+</html>

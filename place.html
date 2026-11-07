@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Nigeria, the Giant of Africa, its people, culture, geography and weather.">
+    <meta name="author" content="Your Name">
+    <title>Nigeria | The Giant of Africa</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source
+                    srcset="images/nigeria-large.webp"
+                    media="(min-width: 1000px)">
+                <source
+                    srcset="images/nigeria-medium.webp"
+                    media="(min-width: 500px)">
+                <img
+                    src="images/nigeria-small.webp"
+                    alt="Beautiful landscape representing Nigeria"
+                    width="1500"
+                    height="750">
+            </picture>
+        </div>
+
+        <section class="country-data">
+            <h2>About Nigeria</h2>
+
+            <div class="data-content">
+                <p><strong>Area:</strong> 923,768 km²</p>
+                <p><strong>Population:</strong> Over 230 million</p>
+                <p><strong>Capital:</strong> Abuja</p>
+                <p><strong>Official Language:</strong> English</p>
+                <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+                <p><strong>Continent:</strong> Africa</p>
+                <p><strong>Government:</strong> Federal Republic</p>
+                <p><strong>National Independence:</strong> 1 October 1960</p>
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <div class="weather-icon">
+                <img src="images/weather.svg" alt="" width="60" height="60">
+            </div>
+
+            <div class="weather-data">
+                <p><strong>Temperature:</strong> <span id="temperature">10</span> °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind Speed:</strong> <span id="windSpeed">12</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill">Calculating...</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Nigeria Country Page</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
