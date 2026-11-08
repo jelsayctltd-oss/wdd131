@@ -165,7 +165,7 @@ footer p {
    MOBILE LAYOUT
 ========================================= */
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 899px) {
 
     header {
         padding: 12px 5px;
@@ -275,5 +275,22 @@ footer p {
         content: " ⛅";
         display: inline-block;
         margin-left: 8px;
+    }
+}
+
+/* Accessibility improvements */
+:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto;
+        animation-duration: 0.01ms;
+        transition-duration: 0.01ms;
     }
 }
