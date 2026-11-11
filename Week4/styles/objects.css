@@ -1,0 +1,69 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Page heading */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Course title */
+#courseName {
+    text-align: center;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+/* Course sections table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+/* Table headings */
+thead {
+    background-color: #333;
+    color: white;
+}
+
+/* Table cells */
+th,
+td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Alternating row colours */
+tbody tr:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
