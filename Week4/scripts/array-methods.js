@@ -20,3 +20,10 @@ let nameLengths = names.map(name => name.length);
 console.log("MAP RESULT:");
 console.log(nameLengths);
 
+let averageLength = names.reduce(
+  (total, name) => total + name.length,
+  0
+) / names.length;
+
+console.log("AVERAGE NAME LENGTH:");
+console.log(averageLength);
