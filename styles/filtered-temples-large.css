@@ -1,0 +1,33 @@
+/* LARGE SCREEN DESIGN */
+
+@media screen and (min-width: 700px) {
+
+    /* HEADER */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* HIDE HAMBURGER BUTTON */
+    #menu-button {
+        display: none;
+    }
+
+    /* NAVIGATION MENU */
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+    nav a {
+        padding: 1rem;
+    }
+
+    /* TEMPLE GALLERY */
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
