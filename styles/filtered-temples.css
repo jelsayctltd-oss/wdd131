@@ -77,6 +77,17 @@ h1 {
     gap: 1.5rem;
 }
 
+.temple-gallery figure {
+    min-width: 0;
+}
+
+.temple-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
 figure {
     background-color: white;
     padding: 10px;

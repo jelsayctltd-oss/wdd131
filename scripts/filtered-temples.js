@@ -55,21 +55,21 @@ const temples = [
         location: "Accra, Ghana",
         dedicated: "2004, January, 11",
         area: 17500,
-        imageUrl: "images/accra-ghana-temple.jpg"
+        imageUrl: "https://www.churchofjesuschrist.org/imgs/ea817531789318cff9d81198cdc39923708b7b79/full/800%2C/0/default"
     },
     {
         templeName: "Johannesburg South Africa",
         location: "Johannesburg, South Africa",
         dedicated: "1985, August, 24",
         area: 19184,
-        imageUrl: "images/johannesburg-temple.jpg"
+        imageUrl: "https://www.churchofjesuschrist.org/imgs/e44b3c89b3485fa2f2c8aa09791d4334dfe23511/full/%2C500/0/default"
     },
     {
         templeName: "Freiberg Germany",
         location: "Freiberg, Germany",
         dedicated: "1985, June, 29",
         area: 21529,
-        imageUrl: "images/freiberg-germany-temple.jpg"
+        imageUrl: "https://www.churchofjesuschrist.org/imgs/36e4c4f367cfab006feb507790c6d9e94c5d146c/full/800%2C/0/default"
     }
 ];
 // DISPLAY TEMPLE CARDS
@@ -114,6 +114,75 @@ const lastModified = new Date(document.lastModified);
 document.querySelector("#lastModified").textContent =
     lastModified.toLocaleString();
 
+// TEMPLE FILTER FUNCTIONS
+
+// DISPLAY ALL TEMPLES
+function showHome() {
+    displayTemples(temples);
+}
+
+// DISPLAY TEMPLES DEDICATED BEFORE 1900
+function showOld() {
+    const oldTemples = temples.filter((temple) => {
+        return Number(temple.dedicated.split(",")[0]) < 1900;
+    });
+
+    displayTemples(oldTemples);
+}
+
+// DISPLAY TEMPLES DEDICATED AFTER 2000
+function showNew() {
+    const newTemples = temples.filter((temple) => {
+        return Number(temple.dedicated.split(",")[0]) > 2000;
+    });
+
+    displayTemples(newTemples);
+}
+
+// DISPLAY TEMPLES LARGER THAN 90,000 SQ FT
+function showLarge() {
+    const largeTemples = temples.filter((temple) => {
+        return temple.area > 90000;
+    });
+
+    displayTemples(largeTemples);
+}
+
+// DISPLAY TEMPLES SMALLER THAN 10,000 SQ FT
+function showSmall() {
+    const smallTemples = temples.filter((temple) => {
+        return temple.area < 10000;
+    });
+
+    displayTemples(smallTemples);
+}
+
+// CONNECT NAVIGATION LINKS TO FILTER FUNCTIONS
+
+document.querySelector("#home").addEventListener("click", function (event) {
+    event.preventDefault();
+    showHome();
+});
+
+document.querySelector("#old").addEventListener("click", function (event) {
+    event.preventDefault();
+    showOld();
+});
+
+document.querySelector("#new").addEventListener("click", function (event) {
+    event.preventDefault();
+    showNew();
+});
+
+document.querySelector("#large").addEventListener("click", function (event) {
+    event.preventDefault();
+    showLarge();
+});
+
+document.querySelector("#small").addEventListener("click", function (event) {
+    event.preventDefault();
+    showSmall();
+});
 
 // SELECT THE HAMBURGER BUTTON AND NAVIGATION
 const menuButton = document.querySelector("#menu-button");
