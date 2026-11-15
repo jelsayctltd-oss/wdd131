@@ -82,11 +82,13 @@ function displayTemples(templeList) {
         const card = document.createElement("figure");
 
         card.innerHTML = `
-            <img 
-                src="${temple.imageUrl}" 
-                alt="${temple.templeName} Temple"
-                loading="lazy"
-            >
+            <img
+    src="${temple.imageUrl}" 
+    alt="${temple.templeName} Temple"
+    width="400"
+    height="250"
+    loading="lazy"
+>
             <figcaption>
                 <h2>${temple.templeName}</h2>
                 <p><strong>Location:</strong> ${temple.location}</p>
