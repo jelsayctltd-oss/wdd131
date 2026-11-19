@@ -34,7 +34,7 @@ const temples = [
         location: "Kensington, Maryland, United States",
         dedicated: "1974, November, 19",
         area: 156558,
-        imageUrl: "images/washington_dc_temple-exterior-2.jpg"
+        imageUrl: "images/washington_dc_temple-exterior-2.jpeg"
     },
     {
         templeName: "Lima Perú",
