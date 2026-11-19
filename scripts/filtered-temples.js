@@ -55,7 +55,7 @@ const temples = [
         location: "Accra, Ghana",
         dedicated: "2004, January, 11",
         area: 17500,
-        imageUrl: "images/accra_ghana_temple_lds.jpg"
+        imageUrl: "images/accra_ghana_temple_lds.webp"
     },
     {
         templeName: "Johannesburg South Africa",
