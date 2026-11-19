@@ -62,14 +62,14 @@ const temples = [
         location: "Johannesburg, South Africa",
         dedicated: "1985, August, 24",
         area: 19184,
-        imageUrl: "images/johannesburg_south_africa_temple_lds.jpg"
+        imageUrl: "images/johannesburg_south_africa_temple_lds.webp"
     },
     {
         templeName: "Freiberg Germany",
         location: "Freiberg, Germany",
         dedicated: "1985, June, 29",
         area: 21529,
-        imageUrl: "images/freiberg_germany_temple_lds.jpg"
+        imageUrl: "images/freiberg_germany_temple_lds.webp"
     }
 ];
 // DISPLAY TEMPLE CARDS
