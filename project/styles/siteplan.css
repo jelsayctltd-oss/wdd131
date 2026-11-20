@@ -1,48 +1,382 @@
+/* =========================================
+   SKILLBRIDGE LEARNING ACADEMY
+   SITE PLAN STYLESHEET
+   ========================================= */
+
+
+/* 1. UNIVERSAL STYLING */
+
 * {
     box-sizing: border-box;
 }
 
-h1 {
-    color: #102B46;
-    font-size: 32px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
 
-.tagline {
-    color: #159B91;
-    font-weight: bold;
-}
-
-p {
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333333;
-}
+/* 2. GENERAL PAGE STYLING */
 
 body {
+    font-family: 'Open Sans', sans-serif;
     background-color: #F4F6F8;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-section {
-    background-color: #FFFFFF;
-    border: 1px solid #dddddd;
-    padding: 20px;
-    margin-bottom: 20px;
-}
+
+/* 3. HEADER STYLING */
 
 header {
     background-color: #102B46;
     color: #FFFFFF;
     padding: 25px;
-    text-align: center;
     width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+
+
+/* 4. LOGO STYLING */
 
 .logo {
     font-size: 28px;
     font-weight: bold;
     color: #E9A23B;
+    margin-bottom: 10px;
+}
+
+.logo span {
+    color: #E9A23B;
+}
+
+
+/* 5. ACADEMY NAME */
+
+header h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+}
+
+
+/* 6. TAGLINE STYLING */
+
+.tagline {
+    color: #159B91;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* 7. MAIN CONTENT */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* 8. SECTION STYLING */
+
+section {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+/* 9. HEADING STYLING */
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    color: #102B46;
+    font-size: 26px;
     margin-bottom: 15px;
+}
+
+h3 {
+    color: #159B91;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* 10. PARAGRAPH STYLING */
+
+p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+}
+
+
+/* 11. LIST STYLING */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* 12. LINK STYLING */
+
+a {
+    color: #159B91;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* 13. BUTTON STYLING */
+
+button {
+    background-color: #159B91;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #102B46;
+}
+
+
+/* 14. IMAGE STYLING */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* 15. FOOTER STYLING */
+
+footer {
+    background-color: #102B46;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #FFFFFF;
+}
+
+
+/* 16. RESPONSIVE DESIGN: TABLETS AND MOBILE */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
+
+
+/* 17. RESPONSIVE DESIGN: SMALL MOBILE PHONES */
+
+@media screen and (max-width: 480px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+/* DESKTOP WIREFRAME */
+
+.wireframe.desktop {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid #102B46;
+    border-radius: 8px;
+}
+
+/* WIREFRAME HEADER */
+
+.wireframe .wf-header {
+    background-color: #102B46;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* WIREFRAME HERO */
+
+.wireframe .wf-hero {
+    background-color: #E8EFF5;
+    color: #102B46;
+    padding: 40px 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 15px;
+}
+
+/* ABOUT AND WHY CHOOSE US */
+
+.wireframe .wf-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.wireframe .wf-content>div {
+    background-color: #F4F6F8;
+    border: 1px solid #DDDDDD;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* COURSE AREAS */
+
+.wireframe .wf-courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.wireframe .wf-courses>div {
+    background-color: #FFFFFF;
+    border: 1px solid #159B91;
+    border-radius: 5px;
+    padding: 25px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* WIREFRAME FOOTER */
+
+.wireframe .wf-footer {
+    background-color: #102B46;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* MOBILE WIREFRAME */
+
+.wireframe.mobile {
+    width: 320px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #FFFFFF;
+    border: 2px solid #159B91;
+    border-radius: 12px;
+}
+
+/* MOBILE CONTENT */
+
+.wireframe.mobile .wf-header {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.wireframe.mobile .wf-hero {
+    padding: 25px 12px;
+    font-size: 13px;
+}
+
+.wireframe.mobile .wf-content {
+    display: block;
+}
+
+.wireframe.mobile .wf-content>div {
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.wireframe.mobile .wf-courses {
+    display: block;
+}
+
+.wireframe.mobile .wf-courses>div {
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.wireframe.mobile .wf-footer {
+    font-size: 12px;
+    padding: 15px 8px;
 }
