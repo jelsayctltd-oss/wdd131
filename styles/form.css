@@ -1,0 +1,259 @@
+/* =====================================
+   SECTION 1: CSS RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   SECTION 2: BODY STYLING
+===================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   SECTION 3: HEADER STYLING
+===================================== */
+
+header {
+    background-color: #1d3557;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #e5e7eb;
+}
+
+
+/* =====================================
+   SECTION 4: MAIN CONTENT AND FORM
+===================================== */
+
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Form Container */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =====================================
+   SECTION 5: LABELS AND FORM INPUTS
+===================================== */
+
+/* General Form Labels */
+form>label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Dropdown Styling */
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Date and Text Input Styling */
+input[type="date"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+
+/* =====================================
+   SECTION 6: FIELDSETS, RADIO BUTTONS
+   AND CHECKBOXES
+===================================== */
+
+/* Fieldset Styling */
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Fieldset Legend */
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+    color: #1d3557;
+}
+
+/* Labels Inside Fieldsets */
+fieldset label {
+    display: inline-block;
+    font-weight: normal;
+    margin: 5px 10px 5px 0;
+}
+
+/* Radio Button Styling */
+input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #2563eb;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #2563eb;
+}
+
+/* =====================================
+   SECTION 7: SUBMIT BUTTON STYLING
+===================================== */
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #1d3557;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit Button Hover Effect */
+input[type="submit"]:hover {
+    background-color: #457b9d;
+}
+
+/* =====================================
+   SECTION 8: FOOTER STYLING
+===================================== */
+
+footer {
+    background-color: #1d3557;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* Confirmation Page Sections */
+main section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+main section h2 {
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+/* Section Paragraphs */
+main section p {
+    margin-bottom: 10px;
+}
+
+/* Review Counter */
+#reviewCount {
+    font-weight: bold;
+    color: #1d3557;
+    font-size: 1.2rem;
+}
+
+/* Submit Another Review Link */
+main section a {
+    display: inline-block;
+    background-color: #1d3557;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Link Hover Effect */
+main section a:hover {
+    background-color: #457b9d;
+}
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 600px) {
+
+    main {
+        width: 100%;
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    fieldset {
+        padding: 10px;
+    }
+
+    fieldset label {
+        display: block;
+        margin: 8px 0;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+}
