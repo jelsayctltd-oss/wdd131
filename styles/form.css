@@ -273,9 +273,9 @@ main section a:hover {
     align-items: center;
 }
 
-/* Style the star labels */
+/* Style the star labels (darker amber: 5.02:1 contrast, passes AA) */
 .rating-item label {
-    color: #f4b400;
+    color: #b45309;
     font-size: 1.2rem;
     margin-bottom: 8px;
     cursor: pointer;
@@ -285,4 +285,34 @@ main section a:hover {
 .rating-item input[type="radio"] {
     margin: 0;
     cursor: pointer;
+}
+
+/* =====================================
+   SECTION 9: REQUIRED FIELD INDICATOR
+===================================== */
+
+/* Red asterisk on required fields (6.47:1 contrast, passes AA) */
+.required {
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+/* "* Indicates a required field" note at the top of the form */
+.required-note {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Style the star labels */
+.rating-item label {
+    color: #b45309;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+/* Required field indicator */
+.required {
+    color: #b91c1c;
+    font-weight: bold;
 }
